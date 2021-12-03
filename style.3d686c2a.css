@@ -1,0 +1,2 @@
+body{display:inline-block;box-shadow:2px 2px 2px grey;padding:20px}a{font-family:Franklin Gothic Medium,Arial Narrow,Arial,sans-serif;text-decoration:none;color:#000}.field,.timer{display:flex}.field{flex-direction:column;justify-content:center}.field+.field{margin-left:40px}.value{font-size:40px;font-weight:700}.label{text-transform:uppercase}.label,input{font-family:Franklin Gothic Medium,Arial Narrow,Arial,sans-serif}input{width:250px;background-color:#000;color:#fff}
+/*# sourceMappingURL=/goit-js-hw-09/style.3d686c2a.css.map */
