@@ -1,0 +1,42 @@
+body {
+  display: inline-block;
+  box-shadow: 2px 2px 2px grey;
+  padding: 20px;
+}
+
+a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+.timer {
+  display: flex;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.field + .field {
+  margin-left: 40px;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+input {
+  width: 250px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
