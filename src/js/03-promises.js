@@ -8,10 +8,9 @@ function createPromise(position, newDelay) {
     return new Promise((resolve, reject) => {
      
         if (shouldResolve) {
-          resolve({position, newDelay})
+         return resolve({position, newDelay})
         } else {
-         
-          reject({position, newDelay})
+         return reject({position, newDelay})
         }
   })
 }
