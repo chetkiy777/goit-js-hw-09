@@ -42,7 +42,7 @@ function convertMs(ms) {
   const hour = minute * 60;
   const day = hour * 24;
 
-  const days = Math.floor(ms / day);
+  const days = addLeadingZero(Math.floor(ms / day));
 
   const hours = addLeadingZero(Math.floor((ms % day) / hour));
 
@@ -57,19 +57,19 @@ const timer = {
   start() {
       let selectedTime = fp.selectedDates[0].getTime();
       let currentTime = Date.now()
-  
-    timerId = setInterval(() => {
+      timerId = setInterval(() => {
         
       currentTime = Date.now()
       const deltaTime = selectedTime - currentTime
       const { days, hours, mins, secs } = convertMs(deltaTime)
+
       daysOutput.textContent = days
       hoursOutput.textContent = hours
       minutesOutput.textContent = mins
       secondsOutput.textContent = secs
-      let sum = (Number(days) + Number(hours) + Number(mins) + Number(secs))
+      // let sum = (Number(days) + Number(hours) + Number(mins) + Number(secs))
       
-        if (sum === 0) {
+        if (deltaTime <= 1000) {
           clearInterval(timerId)
         }
 
